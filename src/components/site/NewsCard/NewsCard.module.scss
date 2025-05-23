@@ -1,0 +1,26 @@
+@use "@/app/variables" as *;
+@use "@/app/mixins" as *;
+
+.newsCard {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #8b8b8e;
+  max-width: 340px;
+  height: 330px;
+
+  .image {
+    height: 220px;
+    position: relative;
+  }
+
+  .textContent {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .title {
+      font-weight: 700;
+    }
+  }
+}
